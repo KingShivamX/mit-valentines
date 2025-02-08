@@ -140,6 +140,18 @@ const LoginForm = () => {
                                 </p>
                             </div>
                         </form>
+
+                        <div className="mt-8 text-center">
+                            <button
+                                onClick={() => navigate('/')}
+                                className="px-6 py-2.5 text-pink-500 text-sm font-medium
+                                border border-pink-200 rounded-full transition-all duration-300
+                                hover:bg-pink-50 hover:border-pink-300 hover:text-pink-600
+                                active:scale-[0.98]"
+                            >
+                                Go to Home 💝
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,14 @@ import PropTypes from "prop-types"
 import Lottie from "lottie-react"
 import loveAnimation from "/public/love.json"
 import { useNavigate } from "react-router-dom"
+import HobbiesForm from "../../components/HobbiesForm/HobbiesForm"
+
+const scrollToHobbiesForm = () => {
+    const hobbiesForm = document.getElementById("hobbies-section")
+    if (hobbiesForm) {
+        hobbiesForm.scrollIntoView({ behavior: "smooth" })
+    }
+}
 
 const TimeUnit = ({ value, label }) => (
     <div
@@ -170,6 +178,7 @@ const Hero = () => {
               shadow-lg transform transition-all duration-300 hover:-translate-y-1 
               hover:shadow-xl active:translate-y-0 focus:outline-none focus:ring-2 
               focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-500"
+                        onClick={() => scrollToHobbiesForm()}
                     >
                         💘 Get Matched Now!
                     </button>
